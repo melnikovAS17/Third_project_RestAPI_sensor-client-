@@ -9,6 +9,12 @@ import java.util.Map;
 public class AddSensor {
     private static final String url = "http://localhost:8080/sensor/registration";
 
+    /*
+    JSON format
+    {
+        "name" : "Sensor name"
+    }
+    */
 
     public static void addSensor(String name){
         Map<String, String> jsonToSend = new HashMap<>();
