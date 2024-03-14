@@ -10,6 +10,17 @@ public class AddMeasurements {
 
     private static final String url = "http://localhost:8080/measurements/add";
 
+    /*
+JSON fromat
+{
+    "temperature" : 3.2,
+    "raining": false,
+    "sensor" : {
+        "name" : "TestSensorNameFromClientApp"
+    }
+}
+    */
+
 
     public static void addMeasurements(float temperature, boolean isRaining, String sensorName){
         Map<String, Object> jsonToSend = new HashMap<>();
